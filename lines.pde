@@ -1,5 +1,3 @@
-import processing.opengl.*;
-
 // helpful globals
 color _bg = color(255, 255, 255);
 int _winSizeX = 500;
@@ -110,9 +108,7 @@ class MovingLine {
 }
 
 void setup() {
-  size(500, 500, OPENGL);
-  hint(DISABLE_OPENGL_2X_SMOOTH);
-  hint(ENABLE_OPENGL_4X_SMOOTH);
+  size(500, 500);
   smooth();
 
   strokeWeight(2);

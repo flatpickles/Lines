@@ -1,8 +1,6 @@
 import processing.core.*; 
 import processing.xml.*; 
 
-import processing.opengl.*; 
-
 import java.applet.*; 
 import java.awt.Dimension; 
 import java.awt.Frame; 
@@ -18,8 +16,6 @@ import java.util.zip.*;
 import java.util.regex.*; 
 
 public class Lines extends PApplet {
-
-
 
 // helpful globals
 int _bg = color(255, 255, 255);
@@ -131,9 +127,7 @@ class MovingLine {
 }
 
 public void setup() {
-  size(500, 500, OPENGL);
-  hint(DISABLE_OPENGL_2X_SMOOTH);
-  hint(ENABLE_OPENGL_4X_SMOOTH);
+  size(500, 500);
   smooth();
 
   strokeWeight(2);
