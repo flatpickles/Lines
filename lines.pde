@@ -76,6 +76,7 @@ class MovingLine {
   void update() {
     _e.x += _d.x;
     _e.y += _d.y;
+    if (_e.x < 0 || _e.x > _winSizeX || _e.y < 0 || _e.y > _winSizeY) this.stop();
   }
 
   void stop() {
